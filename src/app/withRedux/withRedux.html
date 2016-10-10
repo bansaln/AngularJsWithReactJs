@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+    <acme-navbar></acme-navbar>
+  </div>
+    <div class="content" ng-controller="WithReduxController as withRedux">
+        
+	<h2>
+		Logging Redux Dispatch Calls In AngularJS
+	</h2>
+
+	<p>
+		Click to <a ng-click="withRedux.increment()">Increment value</a>: {{ withRedux.counter }}
+	</p>
+
+	<p>
+		Note: See console window for dispatch calls.
+	</p>
+    </div>
+</div>

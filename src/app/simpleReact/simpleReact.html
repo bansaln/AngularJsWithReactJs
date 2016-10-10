@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+    <acme-navbar></acme-navbar>
+  </div>
+    <div class="content" ng-controller="SimpleReactController as simpleReact">
+        <h1>
+          <div><react-component name="Hello" props="simpleReact.person"/></div>
+        </h1>
+      
+      <form class="pure-form">
+        <fieldset>
+          <legend>Enter Name</legend>
+          <input type="text" ng-model="simpleReact.person.fname" placeholder="First Name"/>
+          <input type="text" ng-model="simpleReact.person.lname" placeholder="Last Name"/>
+        </fieldset>
+      </form>
+
+    </div>
+</div>
